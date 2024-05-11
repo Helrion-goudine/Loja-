@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    width: auto;
+    height: 80px;
+    color: #fff;
+    background-color: black;
+    align-items: center;
+    justify-content: space-around;
+   
+        
+    &   .menu{
+    display: flex;
+    gap: 30px;
+    }
+
+    & .logo{
+    padding: 45px;
+    }
+
+    & .logo img{
+    width: 25%;
+    }
+}
+
+nav .menu a {
+    padding: 25px;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+

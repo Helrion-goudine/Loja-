@@ -1,0 +1,103 @@
+header{
+    justify-content: space-around;
+}
+
+#menu-btn {
+    font-size: 25px;
+    color: var(--branco);
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    width: 0%;
+    
+}
+
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+@media (max-width: 1570px) {
+    
+    header {
+        padding: 20px;
+        gap: 15px;
+        align-items: center;
+        height: 80px;
+    }
+
+    #menu-btn {
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+        opacity: 1;
+        display: flex;         
+        margin-bottom: 25%;
+        width: 0%;
+
+    }
+
+    .fa-bars:before {
+        content: "\f0c9";
+    }
+
+    .Cabecalho .menu li a {
+        padding: 15px;
+        display: none;
+        opacity: 100%;
+    }
+      
+    .Cabecalho .menu.active {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 70%;
+        margin-top: 40px;
+        height: calc(100vh - 80px);
+        background-color: #000000;
+        color: #fff;
+        padding: 0px;
+        z-index: 2;
+        opacity: 75%;
+        width: 30%;
+    }
+      
+    .Cabecalho .menu.active li {
+        margin: 5px;
+    }
+      
+    .Cabecalho .menu.active li a {
+        color: #ffffff;
+        font-size: 20px;
+        padding: 0px;
+        border-radius: 4px;
+        display: block;
+        opacity: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Cabecalho .menu.active li a:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    
+    .Cabecalho .menu.active #menu-btn {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 500px) {
+    header {
+        color: #ffffff;
+        justify-content: space-around;
+        font-size: 20px;
+        display: flex;
+        opacity: 100%;
+        width: 100%;
+    }   
+}
+
+
+
+
